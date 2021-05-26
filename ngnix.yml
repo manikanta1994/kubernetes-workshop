@@ -6,8 +6,8 @@ metadata:
     app: webserver
 spec:
   containers:
-  - name: ngnix-demo
-    image: ngnix
+  - name: nginx-demo
+    image: nginx
     ports:
     - name: web-port
       containerPort: 80
