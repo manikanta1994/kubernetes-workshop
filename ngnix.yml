@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ngnix.example.com
+  name: webserver
   labels:
-    app: helloworld
+    app: webserver
 spec:
   containers:
   - name: ngnix-demo
     image: ngnix
     ports:
     - name: web-port
-      containerPort: 8080
+      containerPort: 80
